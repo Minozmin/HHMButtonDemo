@@ -53,6 +53,7 @@
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
     CGRect rect = [super titleRectForContentRect:contentRect];
+    //设置为0里要设置button的titleLabel.textAlignment为NSTextAlignmentCenter
     rect.origin.x = 0;
     rect.origin.y = CGRectGetMaxY([self imageRectForContentRect:contentRect]) + 5;
     rect.size.width = CGRectGetWidth(contentRect);
